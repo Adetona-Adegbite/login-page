@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="top">
+      <div class="logo">
+        <h2>Logo</h2>
+      </div>
+      <nav class="nav-bar">
+        <ul>
+          <li><a href=""> Home</a></li>
+          <li><a href=""> Contact</a></li>
+          <li><a href=""> About</a></li>
+        </ul>
+        <button class="invisible login login-btn">Login</button>
+        <button class="register login-btn">Register</button>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <h2 class="register invisible heading">Register</h2>
+      <h2 class="login heading">Login</h2>
+      <img src="nail.png" alt="" id="nail1" />
+      <img src="nail.png" alt="" id="nail2" />
+      <img src="nail.png" alt="" id="nail3" />
+      <img src="nail.png" alt="" id="nail4" />
+
+      <div class="sheet">
+        <ion-icon class="register invisible" name="person-outline"></ion-icon>
+        <input
+          type="text"
+          id="input"
+          class="register invisible"
+          placeholder="Username"
+        />
+        <br class="register invisible" />
+        <ion-icon name="mail-outline"></ion-icon>
+        <input type="text" name="" id="input" placeholder="Email" />
+        <br />
+        <ion-icon name="lock-closed-outline"></ion-icon>
+        <input type="password" name="" id="input" placeholder="Password" />
+        <br />
+        <br />
+        <label for=""><input type="checkbox" name="" id="" />Remember Me</label>
+        <div class="login">
+          Don't have an account?
+          <p
+            class="swap"
+            style="text-decoration: underline; color: blue"
+            onclick="swap()"
+          >
+            Register
+          </p>
+        </div>
+        <div class="register invisible">
+          Already have an account?
+          <p
+            style="text-decoration: underline; color: blue"
+            onclick="swap()"
+            class="swap"
+          >
+            Login
+          </p>
+        </div>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
